@@ -33,3 +33,9 @@ The desktop opening scene is intentionally a **rasterized, approved hero** with 
 
 ## Security
 See [SECURITY.md](SECURITY.md). The site currently uses no third-party scripts, trackers, login, forms or remote data fetching. No secrets should ever be committed to a public GitHub Pages repository.
+
+
+## V17 brand update
+- The official, user-approved transparent image `Morawell_Logo_Small.png` is shown in the header on all three pages.
+- The same exact logo artwork replaces the embedded old wordmark in the homepage's approved hero illustration.
+- Existing scenario choices, illustration layout, client-side logic, and security policy are unchanged.
