@@ -1,0 +1,16 @@
+# Local/development files; do not publish secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+preview*.png
+.vscode/
+.idea/
