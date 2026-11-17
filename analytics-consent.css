@@ -1,0 +1,61 @@
+/* Isolated opt-in UI; does not modify the existing site styles. */
+.mw-consent-banner,
+.mw-consent-banner *,
+.mw-consent-settings { box-sizing: border-box; }
+.mw-consent-banner {
+  position: fixed;
+  z-index: 2147483000;
+  left: max(16px, env(safe-area-inset-left));
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 18px 22px;
+  border: 1px solid #d1c3aa;
+  border-radius: 12px;
+  background: #fffdf9;
+  box-shadow: 0 9px 35px rgba(21, 31, 30, .20);
+  color: #20342f;
+  font: 14px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.mw-consent-content { flex: 1 1 auto; min-width: 0; }
+.mw-consent-content strong { font-size: 15px; }
+.mw-consent-content p { margin: 6px 0 0; }
+.mw-consent-actions { flex: 0 0 auto; display: flex; gap: 8px; }
+.mw-consent-button {
+  border: 1px solid #315e55;
+  border-radius: 8px;
+  min-height: 42px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+}
+.mw-consent-decline { color: #264941; background: transparent; }
+.mw-consent-accept { color: #fff; background: #264941; }
+.mw-consent-button:focus-visible,
+.mw-consent-settings:focus-visible { outline: 3px solid #ad8c4f; outline-offset: 3px; }
+.mw-consent-settings {
+  position: fixed;
+  z-index: 2147482999;
+  right: max(12px, env(safe-area-inset-right));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid #d1c3aa;
+  border-radius: 18px;
+  color: #264941;
+  background: #fffdf9;
+  font: 12px/1.25 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  cursor: pointer;
+}
+@media (max-width: 650px) {
+  .mw-consent-banner { flex-direction: column; align-items: stretch; padding: 15px; }
+  .mw-consent-actions { justify-content: flex-end; }
+  .mw-consent-button { flex: 1; }
+  .mw-consent-settings { font-size: 11px; }
+}
