@@ -712,6 +712,7 @@ body.on-intro{background:#f9f4ec}
  .ref-link,.ref-hotspot,.ref-start{position:absolute;z-index:2;background:transparent;border:0;color:transparent;cursor:pointer;border-radius:20px;outline-offset:3px}
  .ref-link:focus-visible,.ref-hotspot:focus-visible,.ref-start:focus-visible{outline:3px solid #fff7d8;box-shadow:0 0 0 7px #c58c51}
  .ref-home{left:10.4%;top:1%;width:27%;height:6.5%;}
+ .ref-articles{left:64.2%;top:0.3%;width:9%;height:6.3%;display:flex;align-items:center;justify-content:center;color:#483329;font-size:clamp(11px,1.3vw,21px);font-weight:500;text-decoration:none;white-space:nowrap;text-shadow:0 1px 2px rgba(255,255,255,.25)}
  .ref-services{left:73.7%;top:1%;width:9%;height:6.3%;}
  .ref-contact{left:84.5%;top:1%;width:11%;height:6.3%;}
  .ref-hotspot-growth{left:24.8%;top:30.9%;width:22%;height:41.7%;--glow:#9bdfff}

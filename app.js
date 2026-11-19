@@ -260,6 +260,7 @@ function renderIntro(){
     <div class="hero-reference-desktop">
       <img class="hero-reference-image" src="./approved-hero.png" width="1648" height="928" alt="An executive considering three translucent factory scenarios across an office window. Morawell Decision DNA — Your Decisions Shape the Future." />
       <a class="ref-link ref-home" href="#" id="hero-brand" aria-label="Morawell home"></a>
+      <a class="ref-link ref-articles" href="./articles/" aria-label="Articles">Articles</a>
       <a class="ref-link ref-services" href="./services.html" aria-label="Our services"></a>
       <a class="ref-link ref-contact" href="./contact.html" aria-label="Contact Morawell"></a>
       <div class="ref-choices" role="group" aria-label="Choose a strategy for the Decision DNA experience">${desktopCards}</div>
