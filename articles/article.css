@@ -38,3 +38,6 @@
 /* Mild article-only copy deterrent; does not protect public HTML from retrieval. */
 .mw-article-body{-webkit-user-select:none;user-select:none}
 @media print{.mw-article-body{-webkit-user-select:text;user-select:text}}
+
+/* Semantic heading for assistive technology; no visible design change. */
+.mw-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;clip-path:inset(50%)!important}
