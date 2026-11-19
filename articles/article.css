@@ -1,0 +1,40 @@
+/* MoraWell Articles v1.1 — scoped styles, uses current site tokens. */
+.mw-editorial-page,.mw-listing{position:relative;min-width:0}
+.mw-editorial-page{padding:26px 0 50px}
+.mw-article-top{max-width:740px;margin:0 auto 30px}
+.mw-back-link{color:var(--mute);font-size:13px;font-weight:680;text-decoration:underline;text-underline-offset:4px}
+.mw-back-link:hover{color:var(--mint)}
+.mw-article-heading{max-width:740px;margin:0 auto}
+.mw-article-heading h1{font-size:clamp(34px,4.3vw,60px);line-height:1.08;letter-spacing:-.045em;font-weight:800;margin:0 0 22px;color:var(--ink)}
+.mw-standfirst{font-size:clamp(19px,2vw,23px);line-height:1.5;letter-spacing:-.012em;color:var(--light);margin:0 0 19px}
+.mw-attribution{color:var(--mute);font-size:12px;font-weight:730;letter-spacing:.03em;margin:0 0 24px}
+.mw-sharing{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.mw-sharing .button{padding:9px 16px;min-height:43px;font-size:12px;white-space:nowrap}
+.mw-sharing button,.mw-sharing a{max-width:100%}
+.mw-share-status{min-height:20px;margin:9px 0 10px;font-size:12px;color:var(--mute)}
+.mw-lead-figure{max-width:740px;margin:29px auto 40px}
+.mw-lead-figure img{width:100%;height:auto;display:block;aspect-ratio:16/9;border-radius:16px;object-fit:cover;border:1px solid var(--stroke);box-shadow:var(--shadow)}
+.mw-lead-figure figcaption{font-size:11px;color:var(--mute);line-height:1.5;margin:9px 4px 0}
+.mw-lead-figure figcaption span{opacity:.8}
+.mw-article-body{max-width:740px;margin:0 auto;font-size:18px;line-height:1.74;color:var(--ink);overflow-wrap:break-word}
+.mw-article-body p{margin:0 0 20px}
+.mw-article-body h2{font-size:clamp(22px,2.4vw,29px);font-weight:790;letter-spacing:-.025em;line-height:1.24;margin:40px 0 24px;color:var(--ink)}
+.mw-article-body h3{font-size:19px;line-height:1.34;letter-spacing:-.012em;font-weight:770;margin:29px 0 9px;color:var(--ink)}
+.mw-ai-intro{font-weight:700}
+.mw-ai-prompt{border-left:3px solid var(--mint);padding:13px 20px;margin:17px 0 30px;background:var(--theme-card,var(--glass));border-radius:0 11px 11px 0;color:var(--light);font-style:normal}
+.mw-ai-prompt p{margin:0}
+.mw-publication-signoff{border-top:1px solid var(--stroke);padding-top:18px;margin-top:38px!important;color:var(--mute);font-size:12px;line-height:1.6}
+.mw-listing{padding:47px 0 75px;min-height:47vh}
+.mw-article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,460px));gap:25px;justify-content:start}
+.mw-article-card{display:block;overflow:hidden;background:var(--glass);border:1px solid var(--stroke);border-radius:15px;box-shadow:var(--shadow);transition:transform .16s ease,border-color .16s ease;min-width:0}
+.mw-article-card:hover{transform:translateY(-3px);border-color:var(--mint)}
+.mw-article-card:focus-visible,.mw-sharing a:focus-visible,.mw-sharing button:focus-visible,.mw-back-link:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.mw-article-card img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;display:block}
+.mw-article-card h2{font-size:clamp(16px,1.5vw,18px);line-height:1.35;letter-spacing:-.015em;padding:16px 18px 19px;margin:0;color:var(--ink)}
+@media(max-width:760px){.mw-article-grid{grid-template-columns:1fr}.mw-listing{padding:27px 0 55px}.mw-article-body{font-size:16px;line-height:1.7}.mw-article-heading h1{font-size:clamp(32px,7vw,42px)}.mw-article-body h3{font-size:18px}.mw-lead-figure{margin:20px 0 32px}.mw-sharing .button{flex:1 1 140px}}
+@media(max-width:420px){.mw-article-heading h1{font-size:32px}.mw-standfirst{font-size:18px}.mw-sharing{gap:7px}.mw-sharing .button{flex:1 1 calc(50% - 7px);font-size:11px;padding:9px 8px}.mw-lead-figure img{border-radius:11px}.mw-article-card h2{padding:19px 17px 22px}}
+@media(prefers-reduced-motion:reduce){.mw-article-card{transition:none}}
+
+/* Mild article-only copy deterrent; does not protect public HTML from retrieval. */
+.mw-article-body{-webkit-user-select:none;user-select:none}
+@media print{.mw-article-body{-webkit-user-select:text;user-select:text}}

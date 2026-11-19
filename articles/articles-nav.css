@@ -1,0 +1,9 @@
+/* One-time navigation: shared across the public pages, namespaced to avoid Decision DNA conflicts. */
+.mw-public-nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:7px 10px;margin-left:auto;min-width:0}
+.mw-public-nav a{display:inline-flex;align-items:center;min-height:37px;padding:8px 10px;color:var(--light);font-size:12px;font-weight:710;white-space:nowrap;border-radius:9px;border:1px solid transparent}
+.mw-public-nav a:hover,.mw-public-nav a[aria-current="page"]{color:var(--mint);border-color:var(--stroke);background:var(--glass)}
+.mw-public-nav a:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.site-header .header-right:has(.mw-public-nav){gap:9px;min-width:0}
+.site-header .header-right .mw-public-nav{margin-left:0}
+@media(max-width:680px){.site-header:has(.mw-public-nav){height:auto;min-height:72px;gap:6px;padding:10px 0;align-items:center}.mw-public-nav{gap:0 3px}.mw-public-nav a{font-size:11px;padding:7px 6px;min-height:34px}.site-header .header-right:has(.mw-public-nav){gap:5px}.site-header .header-reset{font-size:10px;padding:7px 4px}}
+@media(max-width:500px){.site-header:has(.mw-public-nav){flex-wrap:wrap;justify-content:space-between;align-content:center;row-gap:6px}.site-header>.mw-public-nav{width:100%;justify-content:space-between}.site-header .header-right:has(.mw-public-nav){width:100%;justify-content:space-between}.site-header .header-right .mw-public-nav{flex:1;justify-content:space-between}.site-header .brand-logo{width:132px}.mw-public-nav a{font-size:12px;min-height:36px;padding:6px 9px}}
