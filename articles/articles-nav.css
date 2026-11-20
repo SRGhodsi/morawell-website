@@ -7,3 +7,21 @@
 .site-header .header-right .mw-public-nav{margin-left:0}
 @media(max-width:680px){.site-header:has(.mw-public-nav){height:auto;min-height:72px;gap:6px;padding:10px 0;align-items:center}.mw-public-nav{gap:0 3px}.mw-public-nav a{font-size:11px;padding:7px 6px;min-height:34px}.site-header .header-right:has(.mw-public-nav){gap:5px}.site-header .header-reset{font-size:10px;padding:7px 4px}}
 @media(max-width:500px){.site-header:has(.mw-public-nav){flex-wrap:wrap;justify-content:space-between;align-content:center;row-gap:6px}.site-header>.mw-public-nav{width:100%;justify-content:space-between}.site-header .header-right:has(.mw-public-nav){width:100%;justify-content:space-between}.site-header .header-right .mw-public-nav{flex:1;justify-content:space-between}.site-header .brand-logo{width:132px}.mw-public-nav a{font-size:12px;min-height:36px;padding:6px 9px}}
+
+/* MoraWell mobile navigation v1: scoped, CSS-only, retains desktop design. */
+.mw-mobile-menu{display:none}
+@media (max-width:680px){
+  .site-header:has(.mw-mobile-menu){position:relative;display:flex;align-items:center;flex-wrap:nowrap;justify-content:space-between;gap:10px;min-height:72px;height:auto;padding:10px 0}
+  .site-header:has(.mw-mobile-menu)>.mw-public-nav,
+  .site-header:has(.mw-mobile-menu)>.header-right{display:none!important}
+  .site-header:has(.mw-mobile-menu)>.brand{min-width:0;flex:0 1 auto}
+  .site-header .mw-mobile-menu{display:block;flex:0 0 auto;position:relative;margin-left:auto;z-index:40}
+  .mw-mobile-menu>summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--stroke);border-radius:11px;background:var(--glass);cursor:pointer;color:var(--ink);user-select:none}
+  .mw-mobile-menu>summary::-webkit-details-marker{display:none}
+  .mw-mobile-menu>summary:focus-visible,.mw-mobile-menu a:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+  .mw-menu-icon{width:21px;height:16px;display:block;background:linear-gradient(currentColor,currentColor) 0 0/100% 2px no-repeat,linear-gradient(currentColor,currentColor) 0 7px/100% 2px no-repeat,linear-gradient(currentColor,currentColor) 0 14px/100% 2px no-repeat}
+  .mw-mobile-menu[open]>summary{border-color:var(--mint);color:var(--mint)}
+  .mw-mobile-menu>nav{position:absolute;right:0;top:calc(100% + 10px);width:min(250px,calc(100vw - 26px));padding:8px;background:var(--theme-glass,var(--panel));border:1px solid var(--stroke);border-radius:13px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:2px}
+  .mw-mobile-menu>nav a{display:block;min-height:44px;padding:12px 14px;border-radius:8px;color:var(--ink);font-size:14px;font-weight:650;line-height:1.4}
+  .mw-mobile-menu>nav a:hover,.mw-mobile-menu>nav a:focus-visible,.mw-mobile-menu>nav a[aria-current="page"]{background:var(--theme-card);color:var(--mint)}
+}
